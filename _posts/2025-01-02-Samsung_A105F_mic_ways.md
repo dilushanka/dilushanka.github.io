@@ -20,7 +20,7 @@ In my case the sub-board mic is faulty. So I disassembled it and got the board o
 I checked those pads on the connecter pin (image below). I put my multimeter red probe into GND ( SMD mic Plate ) and measured the value in the black probe. First, check Main_mic_P Pin and get OL. After I check Main_Mic_bias_2P8 and get the diode value.
 but it is an abnormal value without the main board. because this SMD mic has two different diode values in those pins. but I get OL. so I decide to change Mic. If you need to diagnose further away i Put details below.
 
-[![samsung a10f sub board mic ways](https://raw.githubusercontent.com/dilushanka/dilushanka.github.io/refs/heads/main/img/galaxy-a105F-audio-sub.png "samsung a10f sub board mic ways")](http://https://raw.githubusercontent.com/dilushanka/dilushanka.github.io/refs/heads/main/img/galaxy-a105F-audio-sub.png "samsung a10f sub board mic ways")
+![samsung a10f sub board mic ways](assets/img/posts/galaxy-a105F-audio-sub.png)
 
 ## FIX
 
@@ -37,5 +37,5 @@ Remove the back plate turn on the mobile and make the call. Now measure the volt
 
 ## Note
 This mobile has a series capacitor before the PM IC so you cannot see the diode value in the mic positive line. This works on you connect the board to the main board and measure the diode value in the mic line.
-[![mic line serise capacitor](https://raw.githubusercontent.com/dilushanka/dilushanka.github.io/refs/heads/main/img/Mic%20line%20serise.png "mic line serise capacitor")](http:https://raw.githubusercontent.com/dilushanka/dilushanka.github.io/refs/heads/main/img/Mic%20line%20serise.png// "mic line serise capacitor")
+![samsung a10f sub board mic ways](assets/img/posts/Mic%20line%20serise.png)
 
