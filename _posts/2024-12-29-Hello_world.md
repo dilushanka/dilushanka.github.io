@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Dilushanka"
 date: 29-12-2024
 categories: [blog]
 tags: [dilushanka mobile, first post]
