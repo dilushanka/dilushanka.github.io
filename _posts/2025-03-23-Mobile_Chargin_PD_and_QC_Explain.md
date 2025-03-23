@@ -7,7 +7,7 @@ tags: [dilushanka mobile, Qc and PD, Mobile chargin section]
 ---
 
 **Power Delivery (PD) vs. Quick Charge (QC): What’s the Difference?**
-![QC vs PD](assets\img\posts\Qc and PD.webp)
+![QC vs PD](assets/img/posts/Qc-and-PD.png)
 
 Fast charging has become essential for modern smartphones, tablets, and even laptops. However, with multiple fast-charging standards available, it can be not very clear to understand which one is best for your device. Two of the most common technologies are **Power Delivery (PD)** and **Quick Charge (QC)**. In this guide, we will explore PD and QC, their differences, and which is best for your charging needs.
 
