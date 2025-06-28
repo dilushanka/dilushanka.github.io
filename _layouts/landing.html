@@ -90,7 +90,6 @@
       }
 
       .logo-icon {
-        background: var(--primary);
         color: white;
         width: 40px;
         height: 40px;
@@ -601,7 +600,11 @@
       <div class="container header-container">
         <div class="logo">
           <div class="logo-icon">
-            <i class="fas fa-mobile-alt"></i>
+            <img
+              src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/logo.png"
+              alt="Dilushanka Mobile Logo"
+              style="width: 60px; height: 60px; border-radius: 50%"
+            />
           </div>
           <div class="logo-text">Dilushanka<span>Mobile</span></div>
         </div>
@@ -685,10 +688,9 @@
             <div class="service-icon">
               <i class="fas fa-sync-alt"></i>
             </div>
-            <h3>Software & Reloads</h3>
+            <h3>Data Recovery & Unlocking</h3>
             <p>
-              Operating system reloads, software troubleshooting, virus removal,
-              and data recovery services.
+              FRP Removal, software troubleshooting, and data recovery services.
             </p>
             <a href="#contact" class="cta-button">Get Repair</a>
           </div>
@@ -714,8 +716,8 @@
             <div class="feature-content">
               <h3>Expert Technicians</h3>
               <p>
-                Our team has over 10 years of experience in microsoldering and
-                complex motherboard repairs.
+                We have over 4 years of experience in microsoldering and complex
+                motherboard repairs.
               </p>
             </div>
           </div>
@@ -736,7 +738,7 @@
               <i class="fas fa-bolt"></i>
             </div>
             <div class="feature-content">
-              <h3>Fast Turnaround</h3>
+              <h3>Fast Fix</h3>
               <p>
                 Most repairs completed within 24 hours. Emergency service
                 available.
@@ -762,8 +764,8 @@
         <div class="section-title">
           <h2>Visit Our Repair Center</h2>
           <p>
-            Conveniently located in the heart of Colombo with easy access and
-            parking.
+            Conveniently located in the Dambulla Kandalama Road with easy access
+            and parking.
           </p>
         </div>
         <div class="location-container">
@@ -773,7 +775,7 @@
           <div class="location-info">
             <h3>Our Repair Center</h3>
             <p>
-              We're conveniently located in Colombo with state-of-the-art
+              We're conveniently located in Dambulla with state-of-the-art
               equipment to handle all your mobile repair needs.
             </p>
             <div class="contact-info">
@@ -783,7 +785,9 @@
                 </div>
                 <div>
                   <h4>Address</h4>
-                  <p>123 Galle Road, Colombo 03, Sri Lanka</p>
+                  <p>
+                    Kandalama Road, Athuparayaya Junction, Dambulla, Sri Lanka
+                  </p>
                 </div>
               </div>
               <div class="contact-item">
@@ -792,10 +796,7 @@
                 </div>
                 <div>
                   <h4>Working Hours</h4>
-                  <p>
-                    Monday - Saturday: 9:00 AM - 6:00 PM<br />Sunday: 10:00 AM -
-                    2:00 PM
-                  </p>
+                  <p>All Week Days: 8:00 AM - 7:00 PM</p>
                 </div>
               </div>
               <div class="contact-item">
@@ -804,7 +805,7 @@
                 </div>
                 <div>
                   <h4>Contact</h4>
-                  <p>+94 77 123 4567<br />repair@dilushankamobile.lk</p>
+                  <p>+94 78 927 4648<br />dilushankamobile@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -842,15 +843,15 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <p>
-                Fastest battery replacement I've ever experienced. They had my
-                phone ready in under an hour, and the new battery works
-                perfectly. Highly recommended!
+                Quality work thanks to the team at Dilushanka Mobile. They
+                replaced my iPhone screen in under 2 hours and it looks brand
+                new.
               </p>
             </div>
             <div class="testimonial-author">
               <div class="author-avatar">S</div>
               <div>
-                <h4>Shamila Fernando</h4>
+                <h4>Sthara Lakmini</h4>
                 <p>Kandy</p>
               </div>
             </div>
@@ -874,17 +875,155 @@
         </div>
       </div>
     </section>
+    <!-- image Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css"
+    />
+    <style>
+      .thumbnail_slider {
+        max-width: 700px;
+        margin: 30px auto;
+      }
+
+      .splide__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 580px;
+        overflow: hidden;
+        transition: 0.2s;
+        border-width: 2px !important;
+        margin: 10px 4px;
+      }
+
+      .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+        box-shadow: 2px 3px 8px #000000a3;
+      }
+
+      .splide__slide img {
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+    <div class="thumbnail_slider">
+      <div id="primary_slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/Samsung-A50-No-Power.webp"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/power-ic.webp"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/pixel-5-no-power.webp"
+              />
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/pixel-5-no-power-cpu.webp"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/cpu-rework.webp"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Primary Slider End-->
+      <!-- Thumbnal Slider Start-->
+      <div id="thumbnail_slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/Samsung-A50-No-Power.webp"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/power-ic.webp"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/pixel-5-no-power.webp"
+              />
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/pixel-5-no-power-cpu.webp"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://raw.githubusercontent.com/dilushanka/img/refs/heads/main/dilushanka%20mobile/cpu-rework.webp"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Thumbnal Slider End-->
+    </div>
+    <!-- partial -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
+    <script>
+      // Primary slider.
+      var primarySlider = new Splide("#primary_slider", {
+        type: "fade",
+        heightRatio: 0.5,
+        pagination: false,
+        arrows: false,
+        cover: true,
+      });
+
+      // Thumbnails slider.
+      var thumbnailSlider = new Splide("#thumbnail_slider", {
+        rewind: true,
+        fixedWidth: 100,
+        fixedHeight: 64,
+        isNavigation: true,
+        gap: 10,
+        focus: "center",
+        pagination: false,
+        cover: true,
+        breakpoints: {
+          600: {
+            fixedWidth: 66,
+            fixedHeight: 40,
+          },
+        },
+      }).mount();
+
+      // sync the thumbnails slider as a target of primary slider.
+      primarySlider.sync(thumbnailSlider).mount();
+    </script>
 
     <!-- CTA Section -->
     <section class="cta-section" id="contact">
       <div class="container">
         <h2>Need Professional Phone Repair?</h2>
         <p>
-          Get your device repaired by Sri Lanka's leading mobile repair experts.
+          Get your device repaired by Sri Lanka's Rising mobile repair experts.
           Fast, reliable service with warranty included.
         </p>
-        <a href="tel:+94771234567" class="cta-button">
-          <i class="fas fa-phone-alt"></i> Call Now: +94 77 123 4567
+        <a href="tel:+94787294648" class="cta-button">
+          <i class="fas fa-phone-alt"></i> Call Now: +94 78 729 4648
         </a>
       </div>
     </section>
@@ -898,17 +1037,28 @@
               <div class="logo-icon">
                 <i class="fas fa-mobile-alt"></i>
               </div>
-              <div class="logo-text">Dilushanka<span>Mobile</span></div>
+              <div class="logo-text" style="background-color: #ffffff">
+                Dilushanka<span>Mobile</span>
+              </div>
             </div>
             <p>
-              Professional mobile repair services in Sri Lanka since 2010.
+              Professional mobile repair services in Sri Lanka since 2021.
               Specializing in complex repairs that require technical expertise.
             </p>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a
+                href="https://facebook.com/dilushankamobile/"
+                style="text-decoration: none"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/dilushankamobile/"
+                style="text-decoration: none"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/94789274648" style="text-decoration: none"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
           </div>
           <div class="footer-col">
@@ -926,9 +1076,9 @@
             <ul>
               <li><a href="#">Microsoldering</a></li>
               <li><a href="#">Display Replacement</a></li>
-              <li><a href="#">Battery Replacement</a></li>
+              <li><a href="#">Data Recovery</a></li>
               <li><a href="#">Motherboard Repair</a></li>
-              <li><a href="#">Software Reloads</a></li>
+              <li><a href="#">UNLOCKING</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -937,13 +1087,11 @@
               <li>
                 <i class="fas fa-map-marker-alt"></i> 123 Galle Road, Colombo 03
               </li>
-              <li><i class="fas fa-phone-alt"></i> +94 77 123 4567</li>
+              <li><i class="fas fa-phone-alt"></i> +94 78 927 4648</li>
               <li>
-                <i class="fas fa-envelope"></i> repair@dilushankamobile.lk
+                <i class="fas fa-envelope"></i> dilushankamobile@gmail.com
               </li>
-              <li>
-                <i class="fas fa-clock"></i> Mon-Sat: 9AM-6PM, Sun: 10AM-2PM
-              </li>
+              <li><i class="fas fa-clock"></i> All week Days: 8AM-7PM</li>
             </ul>
           </div>
         </div>
@@ -960,11 +1108,11 @@
     <script>
       // Initialize the map
       function initMap() {
-        // Colombo coordinates (approximate)
-        const colombo = { lat: 6.9271, lng: 79.8612 };
+        // Dambulla coordinates (approximate)
+        const dambulla = { lat: 7.8619894, lng: 80.6688137 };
 
-        // Create the map centered on Colombo
-        const map = L.map("map").setView(colombo, 15);
+        // Create the map centered on Dambulla
+        const map = L.map("map").setView(dambulla, 15);
 
         // Add OpenStreetMap tiles
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -973,7 +1121,7 @@
         }).addTo(map);
 
         // Add a marker for the shop location
-        L.marker(colombo)
+        L.marker(dambulla)
           .addTo(map)
           .bindPopup(
             "<b>Dilushanka Mobile</b><br>Professional Phone Repair Center"
