@@ -35,38 +35,32 @@
         --gray: #64748b;
         --success: #22c55e;
       }
-
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-
       body {
-        font-family: "Roboto", sans-serif;
+        font-family: Roboto, sans-serif;
         line-height: 1.6;
         color: var(--dark);
         background-color: #f1f5f9;
         overflow-x: hidden;
       }
-
       h1,
       h2,
       h3,
       h4,
       h5 {
-        font-family: "Poppins", sans-serif;
+        font-family: Poppins, sans-serif;
         font-weight: 700;
         line-height: 1.2;
       }
-
       .container {
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
       }
-
-      /* Header & Navigation */
       header {
         background: rgba(255, 255, 255, 0.95);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -76,21 +70,18 @@
         z-index: 1000;
         padding: 1rem 0;
       }
-
       .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-
       .logo {
         display: flex;
         align-items: center;
         gap: 0.75rem;
       }
-
       .logo-icon {
-        color: white;
+        color: #fff;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -99,23 +90,19 @@
         justify-content: center;
         font-size: 1.5rem;
       }
-
       .logo-text {
         font-weight: 700;
         font-size: 1.5rem;
         color: var(--dark);
       }
-
       .logo-text span {
         color: var(--primary);
       }
-
       nav ul {
         display: flex;
         list-style: none;
         gap: 2rem;
       }
-
       nav a {
         text-decoration: none;
         color: var(--dark);
@@ -123,11 +110,9 @@
         transition: color 0.3s ease;
         position: relative;
       }
-
       nav a:hover {
         color: var(--primary);
       }
-
       nav a::after {
         content: "";
         position: absolute;
@@ -138,14 +123,12 @@
         background: var(--primary);
         transition: width 0.3s ease;
       }
-
       nav a:hover::after {
         width: 100%;
       }
-
       .cta-button {
         background: var(--primary);
-        color: white;
+        color: #fff;
         padding: 0.75rem 1.5rem;
         border-radius: 50px;
         text-decoration: none;
@@ -154,110 +137,93 @@
         display: inline-block;
         border: 2px solid var(--primary);
       }
-
       .cta-button:hover {
-        background: transparent;
+        background: 0 0;
         color: var(--primary);
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
       }
-
       .mobile-menu-btn {
         display: none;
-        background: transparent;
+        background: 0 0;
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--dark);
       }
-
-      /* Hero Section */
       .hero {
         background: linear-gradient(
             135deg,
-            rgba(37, 99, 235, 0.9) 0%,
+            rgba(37, 99, 235, 0.9) 0,
             rgba(29, 78, 216, 0.9) 100%
           ),
-          url("https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80");
+          url(https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80);
         background-size: cover;
         background-position: center;
-        color: white;
+        color: #fff;
         padding: 12rem 0 8rem;
         text-align: center;
         position: relative;
       }
-
       .hero-content {
         max-width: 800px;
         margin: 0 auto;
       }
-
       .hero h1 {
         font-size: 3.5rem;
         margin-bottom: 1.5rem;
         line-height: 1.1;
       }
-
       .hero p {
         font-size: 1.25rem;
         margin-bottom: 2rem;
         opacity: 0.9;
       }
-
       .hero-buttons {
         display: flex;
         justify-content: center;
         gap: 1rem;
         margin-top: 2rem;
       }
-
       .secondary-button {
-        background: transparent;
-        color: white;
+        background: 0 0;
+        color: #fff;
         padding: 0.75rem 1.5rem;
         border-radius: 50px;
         text-decoration: none;
         font-weight: 500;
         transition: all 0.3s ease;
         display: inline-block;
-        border: 2px solid white;
+        border: 2px solid #fff;
       }
-
       .secondary-button:hover {
-        background: white;
+        background: #fff;
         color: var(--primary);
         transform: translateY(-3px);
       }
-
-      /* Services Section */
       .services {
         padding: 6rem 0;
-        background: white;
+        background: #fff;
       }
-
       .section-title {
         text-align: center;
         margin-bottom: 4rem;
       }
-
       .section-title h2 {
         font-size: 2.5rem;
         color: var(--dark);
         margin-bottom: 1rem;
       }
-
       .section-title p {
         color: var(--gray);
         max-width: 600px;
         margin: 0 auto;
       }
-
       .services-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
       }
-
       .service-card {
         background: var(--light);
         border-radius: 12px;
@@ -266,12 +232,10 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       }
-
       .service-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
       }
-
       .service-icon {
         width: 80px;
         height: 80px;
@@ -284,34 +248,27 @@
         font-size: 2rem;
         color: var(--primary);
       }
-
       .service-card h3 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
       }
-
       .service-card p {
         color: var(--gray);
         margin-bottom: 1.5rem;
       }
-
-      /* Why Choose Us */
       .why-us {
         padding: 6rem 0;
         background: #f1f5f9;
       }
-
       .features {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
       }
-
       .feature {
         display: flex;
         gap: 1rem;
       }
-
       .feature-icon {
         width: 60px;
         height: 60px;
@@ -324,52 +281,42 @@
         color: var(--primary);
         flex-shrink: 0;
       }
-
       .feature-content h3 {
         margin-bottom: 0.5rem;
       }
-
-      /* Location Section */
       .location {
         padding: 6rem 0;
-        background: white;
+        background: #fff;
       }
-
       .location-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
         align-items: center;
       }
-
       .map-container {
         height: 400px;
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
-
       #map {
         height: 100%;
         width: 100%;
       }
-
       .location-info h3 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
       }
-
       .contact-info {
         margin-top: 2rem;
       }
-
       .contact-item {
         display: flex;
         align-items: center;
         gap: 1rem;
         margin-bottom: 1rem;
       }
-
       .contact-icon {
         width: 40px;
         height: 40px;
@@ -380,31 +327,26 @@
         justify-content: center;
         color: var(--primary);
       }
-
-      /* Testimonials */
       .testimonials {
         padding: 6rem 0;
         background: linear-gradient(
           135deg,
-          rgba(37, 99, 235, 0.03) 0%,
+          rgba(37, 99, 235, 0.03) 0,
           rgba(29, 78, 216, 0.03) 100%
         );
       }
-
       .testimonial-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
       }
-
       .testimonial-card {
-        background: white;
+        background: #fff;
         border-radius: 12px;
         padding: 2rem;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         position: relative;
       }
-
       .testimonial-card::before {
         content: '"';
         position: absolute;
@@ -415,19 +357,16 @@
         font-family: serif;
         line-height: 1;
       }
-
       .testimonial-content {
         margin-bottom: 1.5rem;
         position: relative;
         z-index: 1;
       }
-
       .testimonial-author {
         display: flex;
         align-items: center;
         gap: 1rem;
       }
-
       .author-avatar {
         width: 50px;
         height: 50px;
@@ -436,56 +375,47 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
-        font-weight: bold;
+        color: #fff;
+        font-weight: 700;
         font-size: 1.25rem;
       }
-
-      /* CTA Section */
       .cta-section {
         padding: 6rem 0;
         background: linear-gradient(
           135deg,
-          var(--primary) 0%,
+          var(--primary) 0,
           var(--primary-dark) 100%
         );
-        color: white;
+        color: #fff;
         text-align: center;
       }
-
       .cta-section h2 {
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
       }
-
       .cta-section p {
         max-width: 700px;
         margin: 0 auto 2.5rem;
         font-size: 1.1rem;
         opacity: 0.9;
       }
-
-      /* Footer */
       footer {
         background: var(--dark);
-        color: white;
+        color: #fff;
         padding: 4rem 0 2rem;
       }
-
       .footer-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 3rem;
         margin-bottom: 3rem;
       }
-
       .footer-col h4 {
         font-size: 1.25rem;
         margin-bottom: 1.5rem;
         position: relative;
         padding-bottom: 0.75rem;
       }
-
       .footer-col h4::after {
         content: "";
         position: absolute;
@@ -495,31 +425,25 @@
         height: 2px;
         background: var(--primary);
       }
-
       .footer-col ul {
         list-style: none;
       }
-
       .footer-col ul li {
         margin-bottom: 0.75rem;
       }
-
       .footer-col ul li a {
         color: #cbd5e1;
         text-decoration: none;
         transition: color 0.3s ease;
       }
-
       .footer-col ul li a:hover {
-        color: white;
+        color: #fff;
       }
-
       .social-links {
         display: flex;
         gap: 1rem;
         margin-top: 1.5rem;
       }
-
       .social-links a {
         display: flex;
         align-items: center;
@@ -528,15 +452,13 @@
         height: 40px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #fff;
         transition: all 0.3s ease;
       }
-
       .social-links a:hover {
         background: var(--primary);
         transform: translateY(-3px);
       }
-
       .copyright {
         text-align: center;
         padding-top: 2rem;
@@ -544,53 +466,91 @@
         color: #94a3b8;
         font-size: 0.9rem;
       }
-
-      /* Responsive Design */
       @media (max-width: 992px) {
         .location-container {
           grid-template-columns: 1fr;
         }
-
         .hero h1 {
           font-size: 2.8rem;
         }
       }
-
       @media (max-width: 768px) {
         nav ul {
           display: none;
         }
-
         .mobile-menu-btn {
           display: block;
         }
-
         .hero h1 {
           font-size: 2.5rem;
         }
-
         .hero-buttons {
           flex-direction: column;
           align-items: center;
         }
-
         .section-title h2 {
           font-size: 2rem;
         }
       }
-
       @media (max-width: 480px) {
         .hero {
           padding: 10rem 0 6rem;
         }
-
         .hero h1 {
           font-size: 2rem;
         }
-
         .hero p {
           font-size: 1rem;
         }
+      }
+      .google-review-card {
+        border-left: 4px solid transparent;
+        transition: transform 0.3s ease, box-shadow 0.3s ease,
+          border-color 0.3s ease;
+      }
+      .google-review-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        border-left: 4px solid var(--primary);
+      }
+      .review-stars {
+        color: #facc15;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.3rem;
+      }
+      .rating-badge {
+        background: var(--primary);
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 0.15rem 0.4rem;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+      .thumbnail_slider {
+        max-width: 700px;
+        margin: 30px auto;
+      }
+      .splide__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 580px;
+        overflow: hidden;
+        transition: 0.2s;
+        border-width: 2px !important;
+        margin: 10px 4px;
+      }
+      .splide__slide img {
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
       }
     </style>
   </head>
@@ -818,99 +778,82 @@
     <section class="testimonials" id="testimonials">
       <div class="container">
         <div class="section-title">
-          <h2>Customer Testimonials</h2>
-          <p>
-            Hear what our satisfied customers have to say about our services.
-          </p>
+          <h2>Customer Reviews</h2>
+          <p>What our customers say about Dilushanka Mobile on Google.</p>
         </div>
         <div class="testimonial-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <p>
-                My phone had water damage and wouldn't turn on. Other shops said
-                it couldn't be fixed, but Dilushanka Mobile repaired the
-                motherboard and saved all my data. Amazing service!
-              </p>
-            </div>
+          <div class="testimonial-card google-review-card">
             <div class="testimonial-author">
               <div class="author-avatar">R</div>
               <div>
                 <h4>Rajiv Perera</h4>
                 <p>Colombo</p>
+                <div class="review-stars">
+                  ★★★★★
+                  <span class="rating-badge">5.0</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="testimonial-card">
             <div class="testimonial-content">
               <p>
-                Quality work thanks to the team at Dilushanka Mobile. They
-                replaced my iPhone screen in under 2 hours and it looks brand
-                new.
+                Took my water-damaged phone here after others said it was
+                unfixable. Dilushanka Mobile repaired the motherboard and
+                recovered all my data. Highly recommend their service!
               </p>
             </div>
+          </div>
+
+          <div class="testimonial-card google-review-card">
             <div class="testimonial-author">
               <div class="author-avatar">S</div>
               <div>
                 <h4>Sthara Lakmini</h4>
                 <p>Kandy</p>
+                <div class="review-stars">
+                  ★★★★★
+                  <span class="rating-badge">5.0</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="testimonial-card">
             <div class="testimonial-content">
               <p>
-                These guys are true experts in microsoldering. Fixed a charging
-                port issue that two other shops couldn't solve. Professional
-                service with reasonable prices.
+                Professional and fast. They replaced my iPhone screen in under 2
+                hours, and it looks brand new. Appreciate the warranty and
+                friendly service.
               </p>
             </div>
+          </div>
+
+          <div class="testimonial-card google-review-card">
             <div class="testimonial-author">
               <div class="author-avatar">N</div>
               <div>
                 <h4>Nimal Silva</h4>
                 <p>Galle</p>
+                <div class="review-stars">
+                  ★★★★★
+                  <span class="rating-badge">5.0</span>
+                </div>
               </div>
+            </div>
+            <div class="testimonial-content">
+              <p>
+                True experts in microsoldering. Fixed a charging port issue that
+                other shops couldn't. Very fair pricing and excellent customer
+                care.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- image Slider -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css"
     />
-    <style>
-      .thumbnail_slider {
-        max-width: 700px;
-        margin: 30px auto;
-      }
 
-      .splide__slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 400px;
-        width: 580px;
-        overflow: hidden;
-        transition: 0.2s;
-        border-width: 2px !important;
-        margin: 10px 4px;
-      }
-
-      .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
-        box-shadow: 2px 3px 8px #000000a3;
-      }
-
-      .splide__slide img {
-        width: auto;
-        height: auto;
-        margin: auto;
-        display: block;
-        max-width: 100%;
-        max-height: 100%;
-      }
-    </style>
     <div class="thumbnail_slider">
       <div id="primary_slider">
         <div class="splide__track">
