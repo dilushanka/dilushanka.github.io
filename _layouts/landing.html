@@ -655,6 +655,73 @@
         max-width: 100%;
         max-height: 100%;
       }
+
+      #review-popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        max-width: 320px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        padding: 16px;
+        display: none;
+        z-index: 9999;
+        animation: fadeIn 0.5s;
+        font-family: sans-serif;
+      }
+
+      #review-popup h4 {
+        margin: 0 0 8px 0;
+        font-size: 16px;
+        color: #333;
+      }
+
+      #review-popup p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 12px;
+      }
+
+      #review-popup button {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 8px;
+        transition: background 0.3s;
+      }
+
+      #review-popup .review-btn {
+        background-color: #0f9d58;
+        color: white;
+      }
+
+      #review-popup .review-btn:hover {
+        background-color: #0c7b45;
+      }
+
+      #review-popup .dismiss-btn {
+        background-color: #e0e0e0;
+        color: #333;
+      }
+
+      #review-popup .dismiss-btn:hover {
+        background-color: #cacaca;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
   <body>
@@ -1226,6 +1293,52 @@
             navMenu.classList.remove("active");
           }
         });
+      });
+    </script>
+
+    <div id="review-popup">
+      <h4>Enjoying our service?</h4>
+      <p>
+        Support us by leaving a review on Google. It helps our small business a
+        lot!
+      </p>
+      <button class="review-btn" id="review-now-btn">Review Now</button>
+      <button class="dismiss-btn" id="dismiss-popup-btn">Dismiss</button>
+    </div>
+
+    <script>
+      // Show popup once per day per user
+      function shouldShowPopup() {
+        const lastShown = localStorage.getItem("reviewPopupShownDate");
+        const today = new Date().toDateString();
+        return lastShown !== today;
+      }
+
+      function markPopupShown() {
+        const today = new Date().toDateString();
+        localStorage.setItem("reviewPopupShownDate", today);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        if (shouldShowPopup()) {
+          setTimeout(() => {
+            document.getElementById("review-popup").style.display = "block";
+            markPopupShown();
+          }, 5000); // show after 5 seconds
+        }
+
+        document
+          .getElementById("dismiss-popup-btn")
+          .addEventListener("click", function () {
+            document.getElementById("review-popup").style.display = "none";
+          });
+
+        document
+          .getElementById("review-now-btn")
+          .addEventListener("click", function () {
+            window.open("https://g.page/r/CShErZCtyMCNEAI/review", "_blank");
+            document.getElementById("review-popup").style.display = "none";
+          });
       });
     </script>
   </body>
